@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS之内容移除(网页logo优化)</title>
+	<style type="text/css">
+		.logo{
+			width: 143px;
+			height: 76px;
+			background: url("logo.png"); 
+		}
+		a{
+			display: inline-block;
+			/*CSS之内容移除(网页logo优化), 利于SEO*/
+			text-indent: -5000px;
+		}
+	</style>
+</head>
+<body>
+	<div class="logo">
+		<h1>
+			<!-- a标签里面的搜狐两个字继承了h1标签的文字属性(大小) -->
+			<a href="">搜狐</a>
+		</h1>
+	</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位的盒子居中化显示</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0; 
+		}
+		.box{
+			height: 500px;
+			background: #aaa;
+			position: relative;
+		}
+		.nav{
+			width: 960px;
+			height: 60px;
+			background: #666;
+			position: absolute;
+			bottom: 0;
+			/*在文档流前提下,盒子居于父盒子中间显示*/
+			/*但是现在用了页面布局技术中的position技术, 脱标了！*/
+			/*margin: 0 auto;*/ 
+
+			/*需要另寻他法！(重点)*/
+			left: 50%; 
+			margin-left: -480px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="nav"></div>
+	</div>
+</body>
+</html>
